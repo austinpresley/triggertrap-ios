@@ -1,9 +1,9 @@
 //
 //  SharedConstansts.swift
-//  Triggertrap
+//  ShutterBridge
 //
 //  Created by Valentin Kalchev on 22/09/2015.
-//  Copyright © 2015 Triggertrap Limited. All rights reserved.
+//  Copyright © 2015 ShutterBridge Limited. All rights reserved.
 //
 
 import UIKit

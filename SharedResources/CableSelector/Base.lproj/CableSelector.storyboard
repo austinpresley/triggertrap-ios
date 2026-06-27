@@ -13,7 +13,7 @@
         <!--Cable Selector View Controller-->
         <scene sceneID="ZlV-Mi-PdY">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" id="HtV-Vz-3yV" customClass="CableSelectorViewController" customModule="TriggertrapSLR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" id="HtV-Vz-3yV" customClass="CableSelectorViewController" customModule="ShutterBridge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pJO-og-FF9"/>
                         <viewControllerLayoutGuide type="bottom" id="RhE-Iq-PYe"/>
@@ -49,7 +49,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVj-An-Fgs" userLabel="bottomRightView">
                                 <rect key="frame" x="0.0" y="332" width="600" height="268"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hp5-zW-ToT" userLabel="buyButton" customClass="BorderButton" customModule="TriggertrapSLR" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hp5-zW-ToT" userLabel="buyButton" customClass="BorderButton" customModule="ShutterBridge" customModuleProvider="target">
                                         <rect key="frame" x="8" y="216" width="584" height="44"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.8862745098" green="0.13725490200000001" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>

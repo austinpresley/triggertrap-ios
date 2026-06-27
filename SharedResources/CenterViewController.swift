@@ -1,9 +1,9 @@
 //
 //  CenterViewController.swift
-//  TriggertrapSLR
+//  ShutterBridge
 //
 //  Created by Ross Gibson on 01/08/2014.
-//  Copyright (c) 2014 Triggertrap Ltd. All rights reserved.
+//  Copyright (c) 2014 ShutterBridge. All rights reserved.
 //
 
 import UIKit

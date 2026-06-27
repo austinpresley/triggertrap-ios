@@ -1,9 +1,9 @@
 //
 //  TestTriggertViewController.swift
-//  TriggertrapSLR
+//  ShutterBridge
 //
 //  Created by Valentin Kalchev on 27/01/2015.
-//  Copyright (c) 2015 Triggertrap Ltd. All rights reserved.
+//  Copyright (c) 2015 ShutterBridge. All rights reserved.
 //
 
 import UIKit
@@ -17,7 +17,7 @@ class TestTriggertViewController: OnboardingViewController {
     // MARK: - Lifecycle
     @IBOutlet var separatorLine: UIView!
     @IBOutlet var pageControl: UIPageControl!
-    @IBOutlet var triggertrapView: UIView!
+    @IBOutlet var shutterbridgeView: UIView!
     
     @IBOutlet var bottomRightView: UIView!
     @IBOutlet var topLeftView: UIView!
@@ -40,7 +40,7 @@ class TestTriggertViewController: OnboardingViewController {
         
         self.navigationController?.navigationBar.barTintColor = UIColor(hex: 0xE2231A, alpha: 1.0)
         self.navigationItem.rightBarButtonItem?.tintColor = UIColor.white
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.triggertrap_metric_regular(23.0), NSAttributedString.Key.foregroundColor: UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.shutterBridge_metric_regular(23.0), NSAttributedString.Key.foregroundColor: UIColor.white]
         
         shutterButton.ringColor = UIColor(hex: 0xDBDBDB, alpha: 1.0)
         shutterButton.centerColor = UIColor(hex: 0xE2231A, alpha: 1.0)

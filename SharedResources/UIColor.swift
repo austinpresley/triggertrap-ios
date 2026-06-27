@@ -1,9 +1,9 @@
 //
 //  Extensions.swift
-//  TriggertrapSLR
+//  ShutterBridge
 //
 //  Created by Ross Gibson on 12/08/2014.
-//  Copyright (c) 2014 Triggertrap Ltd. All rights reserved.
+//  Copyright (c) 2014 ShutterBridge. All rights reserved.
 //
 
 import UIKit
@@ -21,7 +21,7 @@ public extension UIColor {
     color - color that need change
     percent - change to each of the color components except alpha in 0 - 1 range
     */
-    class func triggertrap_color(_ color: UIColor, change percent: CGFloat) -> UIColor {
+    class func shutterBridge_color(_ color: UIColor, change percent: CGFloat) -> UIColor {
         
         let components = color.cgColor.components
         let red = (components?[0])! * (1.0 - percent)
@@ -32,7 +32,7 @@ public extension UIColor {
         return UIColor(red: componentInBounds(red), green: componentInBounds(green), blue: componentInBounds(blue), alpha: alpha!)
     }
     
-    class func triggertrap_primaryColor(_ alpha: CGFloat = 1.0) -> UIColor {
+    class func shutterBridge_primaryColor(_ alpha: CGFloat = 1.0) -> UIColor {
         
         switch AppTheme() {
         case .normal: 
@@ -44,11 +44,11 @@ public extension UIColor {
         }
     }
     
-    class func triggertrap_shadeRedColor (_ alpha: CGFloat = 1.0) -> UIColor {
+    class func shutterBridge_shadeRedColor (_ alpha: CGFloat = 1.0) -> UIColor {
         return UIColor(hex: 0xCA1F17, alpha: alpha)
     }
     
-    class func triggertrap_trackTintColor (_ alpha: CGFloat = 1.0) -> UIColor {
+    class func shutterBridge_trackTintColor (_ alpha: CGFloat = 1.0) -> UIColor {
         switch AppTheme() {
         case .normal:
             return UIColor(hex: 0xC1241C, alpha: alpha)
@@ -57,11 +57,11 @@ public extension UIColor {
         }
     }
     
-    class func triggertrap_timeWarpDarkRedColor (_ alpha: CGFloat = 1.0) -> UIColor {
+    class func shutterBridge_timeWarpDarkRedColor (_ alpha: CGFloat = 1.0) -> UIColor {
         return UIColor(hex: 0x9E1812, alpha: alpha)
     }
     
-    class func triggertrap_iconColor (_ alpha: CGFloat = 1.0) -> UIColor {
+    class func shutterBridge_iconColor (_ alpha: CGFloat = 1.0) -> UIColor {
         switch AppTheme() {
         case .normal:
             return UIColor(hex: 0xFFFFFF, alpha: alpha)
@@ -71,7 +71,7 @@ public extension UIColor {
         }
     }
     
-    class func triggertrap_fillColor (_ alpha: CGFloat = 1.0) -> UIColor {
+    class func shutterBridge_fillColor (_ alpha: CGFloat = 1.0) -> UIColor {
         switch AppTheme() {
         case .normal:
             return UIColor(hex: 0xFFFFFF, alpha: alpha)
@@ -81,7 +81,7 @@ public extension UIColor {
         }
     }
     
-    class func triggertrap_backgroundColor (_ alpha: CGFloat = 1.0) -> UIColor {
+    class func shutterBridge_backgroundColor (_ alpha: CGFloat = 1.0) -> UIColor {
         switch AppTheme() {
         case .normal:
             return UIColor(hex: 0xEFEFEF, alpha: alpha)
@@ -91,7 +91,7 @@ public extension UIColor {
         }
     }
     
-    class func triggertrap_naturalColor (_ alpha: CGFloat = 1.0) -> UIColor {
+    class func shutterBridge_naturalColor (_ alpha: CGFloat = 1.0) -> UIColor {
         switch AppTheme() {
         case .normal:
             return UIColor(hex: 0xDBDBDB, alpha: alpha)
@@ -101,7 +101,7 @@ public extension UIColor {
         }
     }
     
-    class func triggertrap_mediumDarkGreyColor (_ alpha: CGFloat = 1.0) -> UIColor {
+    class func shutterBridge_mediumDarkGreyColor (_ alpha: CGFloat = 1.0) -> UIColor {
         switch AppTheme() {
         case .normal:
             return UIColor(hex: 0x9F9F9F, alpha: alpha)
@@ -111,7 +111,7 @@ public extension UIColor {
         }
     }
     
-    class func triggertrap_foregroundColor (_ alpha: CGFloat = 1.0) -> UIColor {
+    class func shutterBridge_foregroundColor (_ alpha: CGFloat = 1.0) -> UIColor {
         switch AppTheme() {
         case .normal:
             return UIColor(hex: 0x838383, alpha: alpha)
@@ -121,7 +121,7 @@ public extension UIColor {
         }
     }
     
-    class func triggertrap_clearColor(_ alpha: CGFloat = 0.0) -> UIColor {
+    class func shutterBridge_clearColor(_ alpha: CGFloat = 0.0) -> UIColor {
         switch AppTheme() {
         case .normal:
             return UIColor(white: 1.0, alpha: alpha)
@@ -131,7 +131,7 @@ public extension UIColor {
     }
     
     
-    class func triggertrap_separatorColor() -> UIColor {
+    class func shutterBridge_separatorColor() -> UIColor {
         switch AppTheme() {
         case .normal:
             return UIColor(red: 0.51, green: 0.51, blue: 0.51, alpha: 1.0)
@@ -140,7 +140,7 @@ public extension UIColor {
         }
     }
     
-    class func triggertrap_accentColor (_ alpha: CGFloat = 1.0) -> UIColor {
+    class func shutterBridge_accentColor (_ alpha: CGFloat = 1.0) -> UIColor {
         switch AppTheme() {
         case .normal:
             return UIColor(hex: 0x313131, alpha: alpha)
@@ -150,7 +150,7 @@ public extension UIColor {
         }
     }
     
-    class func triggertrap_tableHeaderBackgroundColor() -> UIColor {
+    class func shutterBridge_tableHeaderBackgroundColor() -> UIColor {
         switch AppTheme() {
         case .normal:
             return UIColor(displayP3Red: 0.907255, green: 0.907255, blue: 0.907255, alpha: 1.0)

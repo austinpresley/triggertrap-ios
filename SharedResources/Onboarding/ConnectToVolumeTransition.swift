@@ -1,9 +1,9 @@
 //
 //  ConnectToVolumeTransition.swift
-//  TriggertrapSLR
+//  ShutterBridge
 //
 //  Created by Valentin Kalchev on 30/01/2015.
-//  Copyright (c) 2015 Triggertrap Ltd. All rights reserved.
+//  Copyright (c) 2015 ShutterBridge. All rights reserved.
 //
 
 import UIKit

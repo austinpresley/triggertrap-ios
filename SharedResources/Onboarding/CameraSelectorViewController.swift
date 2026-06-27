@@ -1,9 +1,9 @@
 //
 //  CameraSelectorViewController.swift
-//  TriggertrapSLR
+//  ShutterBridge
 //
 //  Created by Valentin Kalchev on 28/01/2015.
-//  Copyright (c) 2015 Triggertrap Ltd. All rights reserved.
+//  Copyright (c) 2015 ShutterBridge. All rights reserved.
 //
 
 import UIKit
@@ -116,10 +116,10 @@ extension CameraSelectorViewController: UIPickerViewDelegate {
         let pickerLabel = UILabel()
         
         if pickerView.tag == 0 {
-            pickerLabel.font = UIFont.triggertrap_metric_regular(18.0)
+            pickerLabel.font = UIFont.shutterBridge_metric_regular(18.0)
             pickerLabel.text = cameraManufacturers[row] as String
         } else {
-            pickerLabel.font = UIFont.triggertrap_metric_light(18.0)
+            pickerLabel.font = UIFont.shutterBridge_metric_light(18.0)
             pickerLabel.text = cameraModelsForSelectedManufacturer[row] as String
         }
         

@@ -3,7 +3,7 @@
 //  Yell Camera
 //
 //  Created by Ross Gibson on 28/06/2014.
-//  Copyright (c) 2014 Triggertrap Limited. All rights reserved.
+//  Copyright (c) 2014 ShutterBridge. All rights reserved.
 //
 
 #import "AudioListener.h"

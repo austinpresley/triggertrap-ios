@@ -1,9 +1,9 @@
 //
 //  ManualFocusToTestTriggerTransition.swift
-//  TriggertrapSLR
+//  ShutterBridge
 //
 //  Created by Valentin Kalchev on 06/02/2015.
-//  Copyright (c) 2015 Triggertrap Ltd. All rights reserved.
+//  Copyright (c) 2015 ShutterBridge. All rights reserved.
 //
 
 import UIKit
@@ -30,22 +30,22 @@ class ManualFocusToTestTriggerTransition: CustomTransition {
             
             fromViewController.informationView.isHidden = true
             
-            let redView: UIView = UIView(frame: CGRect(x: 0, y: -toViewController.triggertrapView.frame.height, width: fromViewController.view.frame.width, height: toViewController.triggertrapView.frame.height))
+            let redView: UIView = UIView(frame: CGRect(x: 0, y: -toViewController.shutterbridgeView.frame.height, width: fromViewController.view.frame.width, height: toViewController.shutterbridgeView.frame.height))
             redView.backgroundColor = UIColor(hex: 0xE2231A, alpha: 1.0)
             
-            let triggertrapLabel = UILabel()
-            triggertrapLabel.font = UIFont.triggertrap_metric_light(24)
-            triggertrapLabel.textAlignment = NSTextAlignment.center
-            triggertrapLabel.textColor = UIColor.white
-            triggertrapLabel.text = "Triggertrap"
-            triggertrapLabel.alpha = 0
-            redView.addSubview(triggertrapLabel)
+            let shutterbridgeLabel = UILabel()
+            shutterbridgeLabel.font = UIFont.shutterBridge_metric_light(24)
+            shutterbridgeLabel.textAlignment = NSTextAlignment.center
+            shutterbridgeLabel.textColor = UIColor.white
+            shutterbridgeLabel.text = "ShutterBridge"
+            shutterbridgeLabel.alpha = 0
+            redView.addSubview(shutterbridgeLabel)
             
-            triggertrapLabel.translatesAutoresizingMaskIntoConstraints = false
+            shutterbridgeLabel.translatesAutoresizingMaskIntoConstraints = false
             
-            redView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[triggertrapLabel(42)]-(0)-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["triggertrapLabel": triggertrapLabel]))
+            redView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[shutterbridgeLabel(42)]-(0)-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["shutterbridgeLabel": shutterbridgeLabel]))
             
-            redView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "|-(8)-[triggertrapLabel]-(8)-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["triggertrapLabel": triggertrapLabel]))
+            redView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "|-(8)-[shutterbridgeLabel]-(8)-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["shutterbridgeLabel": shutterbridgeLabel]))
             
             let informationViewSnapshot: UIView = UIView(frame: fromViewController.informationView.frame)
             informationViewSnapshot.backgroundColor = fromViewController.informationView.backgroundColor
@@ -59,7 +59,7 @@ class ManualFocusToTestTriggerTransition: CustomTransition {
             toViewController.view.frame = transitionContext.finalFrame(for: toViewController)
             toViewController.bottomRightView.isHidden = true
             toViewController.separatorLine.isHidden = true
-            toViewController.triggertrapView.isHidden = true
+            toViewController.shutterbridgeView.isHidden = true
             
             containerView.addSubview(toViewController.view)
             
@@ -81,9 +81,9 @@ class ManualFocusToTestTriggerTransition: CustomTransition {
                 
                 separatorLineSnapshot.frame = self.containerView.convert(toViewController.separatorLine.frame, from: toViewController.separatorLine.superview)
                 
-                triggertrapLabel.alpha = 1
+                shutterbridgeLabel.alpha = 1
                 
-                redView.frame = CGRect(x: 0, y: 0, width: toViewController.triggertrapView.frame.width, height: toViewController.triggertrapView.frame.height)
+                redView.frame = CGRect(x: 0, y: 0, width: toViewController.shutterbridgeView.frame.width, height: toViewController.shutterbridgeView.frame.height)
                 
                 self.fadeInSnapshots()
                 self.fadeOutViews()
@@ -95,7 +95,7 @@ class ManualFocusToTestTriggerTransition: CustomTransition {
                     fromViewController.informationView.isHidden = false
                     
                     toViewController.bottomRightView.isHidden = false
-                    toViewController.triggertrapView.isHidden = false
+                    toViewController.shutterbridgeView.isHidden = false
                     toViewController.separatorLine.isHidden = false
                     
                     redView.removeFromSuperview()
@@ -125,8 +125,8 @@ class ManualFocusToTestTriggerTransition: CustomTransition {
             informationViewSnapshot.backgroundColor = fromViewController.bottomRightView.backgroundColor
             fromViewController.bottomRightView.isHidden = true
             
-            let redView = createSnapshotView(fromViewController.triggertrapView)
-            fromViewController.triggertrapView.isHidden = true
+            let redView = createSnapshotView(fromViewController.shutterbridgeView)
+            fromViewController.shutterbridgeView.isHidden = true
             
             let pageControlSnapshot = createSnapshotView(fromViewController.pageControl)
             
@@ -174,7 +174,7 @@ class ManualFocusToTestTriggerTransition: CustomTransition {
                 }, completion: { (finished) -> Void in
                     
                     fromViewController.bottomRightView.isHidden = false
-                    fromViewController.triggertrapView.isHidden = false
+                    fromViewController.shutterbridgeView.isHidden = false
                     fromViewController.separatorLine.isHidden = false
                     fromViewController.pageControl.isHidden = false
                     

@@ -3,7 +3,7 @@
 //  CableSelector
 //
 //  Created by Valentin Kalchev on 31/07/2014.
-//  Copyright (c) 2014 Triggertrap. All rights reserved.
+//  Copyright (c) 2014 ShutterBridge. All rights reserved.
 //
 
 #import "CableSelector.h"

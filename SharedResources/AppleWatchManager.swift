@@ -1,9 +1,9 @@
 //
 //  AppleWatchManager.swift
-//  TriggertrapSLR
+//  ShutterBridge
 //
 //  Created by Valentin Kalchev on 07/08/2015.
-//  Copyright © 2015 Triggertrap Ltd. All rights reserved.
+//  Copyright © 2015 ShutterBridge. All rights reserved.
 //
 
 import WatchConnectivity

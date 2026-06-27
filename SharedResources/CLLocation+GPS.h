@@ -1,6 +1,6 @@
 //
 //  CLLocation+GPS.h
-//  Triggertrap
+//  ShutterBridge
 //
 //  Created by Ross Gibson on 11/04/2013.
 //

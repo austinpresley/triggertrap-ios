@@ -1,6 +1,6 @@
 //
 //  CLLocationManager+Services.m
-//  Triggertrap
+//  ShutterBridge
 //
 //  Created by Ross Gibson on 10/04/2013.
 //
@@ -11,7 +11,7 @@
 @implementation CLLocationManager (Services)
 
 - (BOOL)locationServicesAreEnabled {
-    // check if Location Services are turned off globally or if they are ON but disabled for the Triggertrap app
+    // check if Location Services are turned off globally or if they are ON but disabled for the ShutterBridge app
     if (![CLLocationManager locationServicesEnabled] || ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusDenied)) {
         return NO;
     } else {

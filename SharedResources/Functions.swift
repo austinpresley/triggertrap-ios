@@ -1,9 +1,9 @@
 //
 //  Functions.swift
-//  TriggertrapSLR
+//  ShutterBridge
 //
 //  Created by Ross Gibson on 30/01/2015.
-//  Copyright (c) 2015 Triggertrap Ltd. All rights reserved.
+//  Copyright (c) 2015 ShutterBridge. All rights reserved.
 //
 
 import UIKit
@@ -133,34 +133,34 @@ func ImageWithColor(_ image: UIImage, color: UIColor) -> UIImage {
 
     func applyThemeUpdateToNumberInput(_ numberInput: TTNumberInput?) {
         
-        numberInput?.displayView.textColor = UIColor.triggertrap_accentColor()
-        numberInput?.borderColor = UIColor.triggertrap_accentColor()
-        numberInput?.borderHighlightColor = UIColor.triggertrap_primaryColor()
+        numberInput?.displayView.textColor = UIColor.shutterBridge_accentColor()
+        numberInput?.borderColor = UIColor.shutterBridge_accentColor()
+        numberInput?.borderHighlightColor = UIColor.shutterBridge_primaryColor()
         numberInput?.setNeedsDisplay()
     }
     
     func applyThemeUpdateToTimeInput(_ timeInput: TTTimeInput?) {
-        timeInput?.setFontColor(UIColor.triggertrap_accentColor())
-        timeInput?.borderColor = UIColor.triggertrap_accentColor()
-        timeInput?.borderHighlightColor = UIColor.triggertrap_primaryColor()
+        timeInput?.setFontColor(UIColor.shutterBridge_accentColor())
+        timeInput?.borderColor = UIColor.shutterBridge_accentColor()
+        timeInput?.borderHighlightColor = UIColor.shutterBridge_primaryColor()
         timeInput?.setNeedsDisplay()
     }
     
     func applyThemeUpdateToPicker(_ picker: HorizontalPicker?) {
         
-        picker?.fontColor = UIColor.triggertrap_accentColor()
-        picker?.gradientView.leftGradientStartColor = UIColor.triggertrap_fillColor()
-        picker?.gradientView.leftGradientEndColor = UIColor.triggertrap_clearColor()
-        picker?.gradientView.rightGradientEndColor = UIColor.triggertrap_fillColor()
-        picker?.gradientView.rightGradientStartColor = UIColor.triggertrap_clearColor()
-        picker?.gradientView.horizontalLinesColor = UIColor.triggertrap_foregroundColor()
-        picker?.gradientView.verticalLinesColor = UIColor.triggertrap_primaryColor()
+        picker?.fontColor = UIColor.shutterBridge_accentColor()
+        picker?.gradientView.leftGradientStartColor = UIColor.shutterBridge_fillColor()
+        picker?.gradientView.leftGradientEndColor = UIColor.shutterBridge_clearColor()
+        picker?.gradientView.rightGradientEndColor = UIColor.shutterBridge_fillColor()
+        picker?.gradientView.rightGradientStartColor = UIColor.shutterBridge_clearColor()
+        picker?.gradientView.horizontalLinesColor = UIColor.shutterBridge_foregroundColor()
+        picker?.gradientView.verticalLinesColor = UIColor.shutterBridge_primaryColor()
         picker?.gradientView.setNeedsDisplay()
         picker?.layoutSubviews()
     }
 
 func applyThemeUpdateToDescriptionLabel(_ label: UILabel) {
-    label.textColor = UIColor.triggertrap_foregroundColor()
+    label.textColor = UIColor.shutterBridge_foregroundColor()
 }
 
 

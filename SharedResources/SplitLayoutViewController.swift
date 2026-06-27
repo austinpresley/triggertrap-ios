@@ -1,9 +1,9 @@
 //
 //  SplitLayoutViewController.swift
-//  TriggertrapSLR
+//  ShutterBridge
 //
 //  Created by Ross Gibson on 01/08/2014.
-//  Copyright (c) 2014 Triggertrap Ltd. All rights reserved.
+//  Copyright (c) 2014 ShutterBridge. All rights reserved.
 //  Last updated by Valentin Kalchev 22/09/2015
 
 import UIKit
@@ -95,7 +95,7 @@ class SplitLayoutViewController: CenterViewController {
             
             // Create a new separatorView
             separatorView = UIView()
-            separatorView!.backgroundColor = UIColor.triggertrap_accentColor(1.0)
+            separatorView!.backgroundColor = UIColor.shutterBridge_accentColor(1.0)
             separatorView?.translatesAutoresizingMaskIntoConstraints = false
             
             bottomRightView.addSubview(separatorView!)
@@ -119,22 +119,22 @@ class SplitLayoutViewController: CenterViewController {
     
     @objc func performThemeUpdate() {
         
-        self.view.backgroundColor = UIColor.triggertrap_fillColor()
+        self.view.backgroundColor = UIColor.shutterBridge_fillColor()
         
-        self.navigationController?.navigationBar.barTintColor = UIColor.triggertrap_primaryColor(1.0)
+        self.navigationController?.navigationBar.barTintColor = UIColor.shutterBridge_primaryColor(1.0)
         
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.triggertrap_metric_regular(23.0), NSAttributedString.Key.foregroundColor: UIColor.triggertrap_iconColor(1.0)]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.shutterBridge_metric_regular(23.0), NSAttributedString.Key.foregroundColor: UIColor.shutterBridge_iconColor(1.0)]
         
-        self.topLeftView.backgroundColor = UIColor.triggertrap_fillColor()
-        self.bottomRightView.backgroundColor = UIColor.triggertrap_backgroundColor()
+        self.topLeftView.backgroundColor = UIColor.shutterBridge_fillColor()
+        self.bottomRightView.backgroundColor = UIColor.shutterBridge_backgroundColor()
         
-        self.separatorView?.backgroundColor = UIColor.triggertrap_accentColor(1.0)
+        self.separatorView?.backgroundColor = UIColor.shutterBridge_accentColor(1.0)
         
         self.leftButton?.setBackgroundImage(#imageLiteral(resourceName: "MenuIcon"), for: .normal)
-        self.leftButton?.tintColor = UIColor.triggertrap_fillColor(1)
+        self.leftButton?.tintColor = UIColor.shutterBridge_fillColor(1)
 
         self.rightButton?.setBackgroundImage(#imageLiteral(resourceName: "OptionsIcon"), for: .normal)
-        self.rightButton?.tintColor = UIColor.triggertrap_fillColor(1)
+        self.rightButton?.tintColor = UIColor.shutterBridge_fillColor(1)
         
         self.viewControllerTheme = AppTheme()
     }

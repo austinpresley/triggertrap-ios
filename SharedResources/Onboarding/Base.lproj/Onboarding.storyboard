@@ -23,7 +23,7 @@
         <!--Navigation Controller-->
         <scene sceneID="kqw-y2-sQR">
             <objects>
-                <navigationController autoresizesArchivedViewToFullSize="NO" navigationBarHidden="YES" id="fT2-Ge-Gp5" customClass="OnboardingNavigationViewController" customModule="TriggertrapSLR" sceneMemberID="viewController">
+                <navigationController autoresizesArchivedViewToFullSize="NO" navigationBarHidden="YES" id="fT2-Ge-Gp5" customClass="OnboardingNavigationViewController" customModule="ShutterBridge" sceneMemberID="viewController">
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -43,7 +43,7 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjl-Ar-rq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="jKt-W4-FDH" customClass="NavigationControllerDelegate" customModule="TriggertrapSLR" customModuleProvider="target">
+                <customObject id="jKt-W4-FDH" customClass="NavigationControllerDelegate" customModule="ShutterBridge" customModuleProvider="target">
                     <connections>
                         <outlet property="navigationController" destination="fT2-Ge-Gp5" id="4zs-L4-LZS"/>
                     </connections>
@@ -54,7 +54,7 @@
         <!--Splash View Controller-->
         <scene sceneID="p3f-Kg-Jzn">
             <objects>
-                <viewController storyboardIdentifier="SplashScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iWs-Ri-TeB" customClass="SplashViewController" customModule="TriggertrapSLR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iWs-Ri-TeB" customClass="SplashViewController" customModule="ShutterBridge" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gLh-sD-ipR"/>
                         <viewControllerLayoutGuide type="bottom" id="mdS-6Z-2Fc"/>
@@ -67,7 +67,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMo-EU-VcM" customClass="BorderButton" customModule="TriggertrapSLR" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMo-EU-VcM" customClass="BorderButton" customModule="ShutterBridge" customModuleProvider="target">
                                 <rect key="frame" x="16" y="607" width="343" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="2qJ-V4-ewC"/>
@@ -116,7 +116,7 @@
         <!--Kit Selector View Controller-->
         <scene sceneID="qKy-1s-Beb">
             <objects>
-                <viewController storyboardIdentifier="MobileKit" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kvX-AQ-yZ9" customClass="KitSelectorViewController" customModule="TriggertrapSLR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MobileKit" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kvX-AQ-yZ9" customClass="KitSelectorViewController" customModule="ShutterBridge" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TDY-ft-obN"/>
                         <viewControllerLayoutGuide type="bottom" id="3w4-QT-oO3"/>
@@ -150,7 +150,7 @@
                                             <constraint firstAttribute="width" constant="8" id="kab-Ur-qYJ"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I already own a Triggertrap Mobile Kit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7cj-Xg-fjg">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I already own a ShutterBridge Mobile Kit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7cj-Xg-fjg">
                                         <rect key="frame" x="8" y="8" width="359" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="q7v-ks-OM5"/>
@@ -203,7 +203,7 @@
                                     <constraint firstAttribute="height" constant="1" id="KRL-X6-h7c"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Triggertrap Mobile Kit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xSY-SH-sWo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ShutterBridge Mobile Kit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xSY-SH-sWo">
                                 <rect key="frame" x="8" y="284" width="359" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="i6f-g0-Eao"/>
@@ -212,7 +212,7 @@
                                 <color key="textColor" red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXY-JH-gzG" customClass="BorderButton" customModule="TriggertrapSLR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXY-JH-gzG" customClass="BorderButton" customModule="ShutterBridge">
                                 <rect key="frame" x="16" y="507" width="343" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="a0V-Un-Aon"/>
@@ -328,7 +328,7 @@
         <!--Camera Selector View Controller-->
         <scene sceneID="q3c-e2-OWy">
             <objects>
-                <viewController id="mfW-ar-pl8" customClass="CameraSelectorViewController" customModule="TriggertrapSLR" sceneMemberID="viewController">
+                <viewController id="mfW-ar-pl8" customClass="CameraSelectorViewController" customModule="ShutterBridge" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="apR-14-7Cd"/>
                         <viewControllerLayoutGuide type="bottom" id="8fS-cu-jeJ"/>
@@ -391,7 +391,7 @@
                                             <constraint firstAttribute="width" secondItem="2xi-fe-XzZ" secondAttribute="height" multiplier="1:1" id="PUe-gg-i6L"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwK-ix-ltr" customClass="BorderButton" customModule="TriggertrapSLR">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwK-ix-ltr" customClass="BorderButton" customModule="ShutterBridge">
                                         <rect key="frame" x="16" y="485" width="343" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Xqv-4q-Mv5"/>
@@ -584,7 +584,7 @@
         <!--Connect Kit View Controller-->
         <scene sceneID="uLD-ZK-b4x">
             <objects>
-                <viewController storyboardIdentifier="Connect To iPhone" id="Be0-8s-2fR" customClass="ConnectKitViewController" customModule="TriggertrapSLR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Connect To iPhone" id="Be0-8s-2fR" customClass="ConnectKitViewController" customModule="ShutterBridge" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pnX-EK-J6g"/>
                         <viewControllerLayoutGuide type="bottom" id="bIi-Wu-gix"/>
@@ -593,7 +593,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IEo-Fx-ACx" customClass="DongleCableView" customModule="TriggertrapSLR" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IEo-Fx-ACx" customClass="DongleCableView" customModule="ShutterBridge" customModuleProvider="target">
                                 <rect key="frame" x="69.5" y="220" width="236" height="237"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zaw-j1-peE" userLabel="plugView">
@@ -833,7 +833,7 @@
         <!--Camera View Controller-->
         <scene sceneID="HKn-K1-Ebd">
             <objects>
-                <viewController storyboardIdentifier="Connect to Camera" id="7Nq-kc-TaM" customClass="CameraViewController" customModule="TriggertrapSLR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Connect to Camera" id="7Nq-kc-TaM" customClass="CameraViewController" customModule="ShutterBridge" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lGY-gT-PuH"/>
                         <viewControllerLayoutGuide type="bottom" id="aYR-kw-lGm"/>
@@ -849,7 +849,7 @@
                                     <constraint firstAttribute="width" constant="320" id="TGt-Ai-YBc"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWe-0a-eHi" customClass="DongleCableView" customModule="TriggertrapSLR" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWe-0a-eHi" customClass="DongleCableView" customModule="ShutterBridge" customModuleProvider="target">
                                 <rect key="frame" x="69.5" y="95" width="236" height="237"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLQ-a8-MCG" userLabel="plugView">
@@ -928,7 +928,7 @@
                                     <constraint firstItem="PLQ-a8-MCG" firstAttribute="leading" secondItem="OWe-0a-eHi" secondAttribute="leading" constant="29" id="xTb-Km-gQx"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBV-VV-I4S" userLabel="Camera Cable View" customClass="DongleCableView" customModule="TriggertrapSLR" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBV-VV-I4S" userLabel="Camera Cable View" customClass="DongleCableView" customModule="ShutterBridge" customModuleProvider="target">
                                 <rect key="frame" x="117.5" y="203" width="188" height="311"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sX2-Zv-03W" userLabel="pluggedView">
@@ -1141,7 +1141,7 @@
         <!--Manual Focus View Controller-->
         <scene sceneID="eee-vn-Y1g">
             <objects>
-                <viewController storyboardIdentifier="Manual Focus" id="wCs-UE-8x1" customClass="ManualFocusViewController" customModule="TriggertrapSLR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Manual Focus" id="wCs-UE-8x1" customClass="ManualFocusViewController" customModule="ShutterBridge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pSS-pe-NVT"/>
                         <viewControllerLayoutGuide type="bottom" id="0dd-Zp-3wF"/>
@@ -1150,7 +1150,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lQ3-rg-kur" customClass="DongleCableView" customModule="TriggertrapSLR" customModuleProvider="target">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lQ3-rg-kur" customClass="DongleCableView" customModule="ShutterBridge" customModuleProvider="target">
                                 <rect key="frame" x="385" y="95" width="236" height="237"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZwP-KV-XMo" userLabel="plugView">
@@ -1229,7 +1229,7 @@
                                     <constraint firstItem="aNp-pc-JDq" firstAttribute="top" secondItem="lQ3-rg-kur" secondAttribute="top" constant="84" id="vGA-ca-Oxf"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLJ-J4-SH7" userLabel="Camera Cable View" customClass="DongleCableView" customModule="TriggertrapSLR" customModuleProvider="target">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLJ-J4-SH7" userLabel="Camera Cable View" customClass="DongleCableView" customModule="ShutterBridge" customModuleProvider="target">
                                 <rect key="frame" x="435" y="201" width="186" height="311"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dongle - Coil" translatesAutoresizingMaskIntoConstraints="NO" id="1ag-YL-g5c">
@@ -1514,7 +1514,7 @@
         <!--Volume View Controller-->
         <scene sceneID="hYk-2g-oQo">
             <objects>
-                <viewController storyboardIdentifier="Increase Volume" id="pnQ-4e-eb1" customClass="VolumeViewController" customModule="TriggertrapSLR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Increase Volume" id="pnQ-4e-eb1" customClass="VolumeViewController" customModule="ShutterBridge" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="778-bS-Seh"/>
                         <viewControllerLayoutGuide type="bottom" id="nEi-qN-WZC"/>
@@ -1523,7 +1523,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="siC-JM-9AD" customClass="DongleCableView" customModule="TriggertrapSLR" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="siC-JM-9AD" customClass="DongleCableView" customModule="ShutterBridge" customModuleProvider="target">
                                 <rect key="frame" x="91" y="525.5" width="193" height="237"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ge-ag-oO4" userLabel="plugView">
@@ -1617,7 +1617,7 @@
                                     <constraint firstAttribute="height" constant="384" id="dN8-HK-4uj"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZ4-Mr-05a" userLabel="Camera Cable View" customClass="DongleCableView" customModule="TriggertrapSLR" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZ4-Mr-05a" userLabel="Camera Cable View" customClass="DongleCableView" customModule="ShutterBridge" customModuleProvider="target">
                                 <rect key="frame" x="91" y="631.5" width="193" height="313"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xiC-o9-4wr" userLabel="pluggedView">
@@ -1852,10 +1852,10 @@
             </objects>
             <point key="canvasLocation" x="3016" y="-1171"/>
         </scene>
-        <!--Triggertrap-->
+        <!--ShutterBridge-->
         <scene sceneID="GwD-dx-h86">
             <objects>
-                <viewController restorationIdentifier="Wi-Fi" title="Triggertrap" id="YcA-4n-gQX" customClass="TestTriggertViewController" customModule="TriggertrapSLR" sceneMemberID="viewController">
+                <viewController restorationIdentifier="Wi-Fi" title="ShutterBridge" id="YcA-4n-gQX" customClass="TestTriggertViewController" customModule="ShutterBridge" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K0w-bz-89a"/>
                         <viewControllerLayoutGuide type="bottom" id="atX-z0-cIp"/>
@@ -1903,10 +1903,10 @@
                                     <constraint firstAttribute="centerX" secondItem="tx7-Ah-uw4" secondAttribute="centerX" id="iA1-5R-y4g"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6G-b8-tuf" userLabel="triggertrapView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6G-b8-tuf" userLabel="shutterbridgeView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Triggertrap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Tel-gq-TVZ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ShutterBridge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Tel-gq-TVZ">
                                         <rect key="frame" x="129.5" y="22" width="116" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="TQk-H3-gVb"/>
@@ -1933,7 +1933,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSn-vp-vYe" userLabel="bottomRightView">
                                 <rect key="frame" x="0.0" y="465.5" width="375" height="201.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fB-sC-ASp" userLabel="shutterButton" customClass="ShutterButton" customModule="TriggertrapSLR">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fB-sC-ASp" userLabel="shutterButton" customClass="ShutterButton" customModule="ShutterBridge">
                                         <rect key="frame" x="137.5" y="50.5" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="NSi-iW-Wbx"/>
@@ -2010,7 +2010,7 @@
                         <outlet property="separatorLine" destination="4XM-pF-qLZ" id="cq2-Tt-GOX"/>
                         <outlet property="shutterButton" destination="5fB-sC-ASp" id="ZZ7-37-km9"/>
                         <outlet property="topLeftView" destination="721-Yp-607" id="TDJ-uw-1kC"/>
-                        <outlet property="triggertrapView" destination="E6G-b8-tuf" id="J8s-Dy-AVR"/>
+                        <outlet property="shutterbridgeView" destination="E6G-b8-tuf" id="J8s-Dy-AVR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJw-XO-wEX" sceneMemberID="firstResponder"/>

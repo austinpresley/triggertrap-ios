@@ -1,6 +1,6 @@
 //
 //  CLLocationManager+Services.h
-//  Triggertrap
+//  ShutterBridge
 //
 //  Created by Ross Gibson on 10/04/2013.
 //

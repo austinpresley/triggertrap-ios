@@ -3,7 +3,7 @@
 //  CameraChooser
 //
 //  Created by Valentin Kalchev on 31/07/2014.
-//  Copyright (c) 2014 Triggertrap. All rights reserved.
+//  Copyright (c) 2014 ShutterBridge. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -26,7 +26,7 @@
 - (NSString *)cableForCameraManufacturer:(NSString *)cameraManufacturer withModel:(NSString *)cameraModel;
 
 /*!
- * Use to url to Triggertrap store with specific cable
+ * Use to url to ShutterBridge store with specific cable
  */
 - (NSString *)urlForCable:(NSString *)cable;
 

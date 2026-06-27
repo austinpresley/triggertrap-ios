@@ -1,41 +1,93 @@
-# Triggertrap Read Me & Licence
+# ShutterBridge
 
-Triggertrap is an app that makes it easy for photographers to use their phone as a wired remote control. 
+**Turn your iPhone into a powerful camera remote and intervalometer.**
 
-The Triggertrap system consists of 3 parts: 
+ShutterBridge is a modernized, community-maintained fork of the open-source
+[Triggertrap](https://github.com/Triggertrap/triggertrap-ios) iOS app, which was
+discontinued in 2017. It connects to your camera through a compatible
+audio-jack dongle and camera cable, and lets you fire the shutter in dozens of
+creative ways — from a simple cable release to motion-triggered, sound-triggered
+and time-lapse photography.
 
-- An app for iOS or Android
-- A Mobile Dongle that turns an audio signal into a switch
-- A Camera Connection Cable for a specific camera. 
+ShutterBridge is **"Based on Triggertrap"**. It is not affiliated with,
+endorsed by, or licensed by Triggertrap Ltd, and all Triggertrap branding has
+been removed in accordance with the original licence. See [LICENSE](LICENSE).
 
-Triggertrap is a commercial project that was conceived in 2010, launched in 2011, and ultimately went out of business in 2017. 
+---
 
-# Running the code
+## What you need
 
-- Download the git repo
-- Run `pod install`
-- Open the .xcworkspace file
+1. **ShutterBridge** on an iPhone or iPad (iOS 16 or later).
+2. A **mobile dongle** that converts the audio signal into a camera trigger
+   (the original Triggertrap dongles still work — see the in-app cable selector,
+   which links to compatible hardware).
+3. A **camera connection cable** for your specific camera.
 
-# Credits
+You can also use the **WiFi remote** mode to trigger one device from another
+over a local network, no dongle required.
 
-The original software for iOS was built by [Matt Kane](https://github.com/ascorbic), and it was further developed by [Ross Gibson](https://github.com/Ross-Gibson) and [Valentin Kalchev](https://github.com/Valentin-Kalchev)
+## Features
 
-Further Open Source contributions have been made by [Alex Taffe](https://github.com/alex-taffe).
+- **Cable release** — Quick, Press & Hold, Press & Lock, and Timed release.
+- **Self-timer** with a configurable countdown.
+- **Time-lapse** — classic intervalometer, **DistanceLapse** (fire based on how
+  far you've moved, using GPS), **LE HDR** and **LE HDR Time-lapse** for long
+  exposures, and **Bulb ramping** for day-to-night "holy grail" time-lapses.
+- **Sensor triggers** — Sound, Motion, Vibration, **Face detection**, and
+  **Peekaboo** (fire when something enters the frame).
+- **Sensor delay** and self-timer combinations.
+- **Calculators** — Neutral Density (long-exposure) calculator and a
+  sunrise/sunset/solar calculator.
+- **WiFi remote** triggering between devices.
 
-# Licence - Open source under the MIT licence. 
+## Building from source
 
-Copyright 2017 Haje Jan Kamps (http://haje.me / @Haje)
+Requires Xcode 16 or later (iOS 18 SDK) and [CocoaPods](https://cocoapods.org).
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+```sh
+git clone <this-repo>
+cd ShutterBridge
+pod install
+open ShutterBridge.xcworkspace
+```
 
-- This software may not be distributed under the "Triggertrap" trademark. 
+Select the **ShutterBridge** scheme and run on a simulator or device.
 
-- This software must not be distributed in a way that makes it appear as if the software is licenced or endorsed by "Triggertrap". 
+## Installing the prebuilt app (IPA)
 
-- Any references to "Triggertrap" or the Triggertrap logo must be removed from the software 
+A prebuilt, **unsigned** `ShutterBridge.ipa` is provided so you don't have to
+build it yourself. Because it is unsigned, you sign it with your own free Apple
+ID when you install it — exactly how most open-source iOS apps are distributed
+outside the App Store. Any of these work:
 
-- It may be marketed as "Compatible with Triggertrap" or "Based on Triggertrap". 
+- **[AltStore](https://altstore.io)** — install AltServer on your computer, then
+  open the `.ipa` in AltStore on your device.
+- **[Sideloadly](https://sideloadly.io)** — drag the `.ipa` in, enter your Apple
+  ID, and install.
+- **Xcode** → *Window ▸ Devices and Simulators* → drag the `.ipa` onto your
+  connected device (with a free developer account configured).
 
-- The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+Apps signed with a free Apple ID need to be re-signed every 7 days; a paid
+Apple Developer account extends this to a year.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+> **Note:** the trigger output relies on the audio hardware of a real device.
+> The full trigger pipeline can only be exercised on a physical iPhone/iPad with
+> a dongle attached, not in the Simulator.
+
+## What changed in this fork
+
+This fork modernizes the 2018 codebase so it builds and runs on current tools:
+
+- Builds cleanly on **Xcode 16 / Swift 5** with the **iOS 18 SDK**; deployment
+  target raised to **iOS 16** (runs on iOS 17.7 and later).
+- Removed the discontinued **WatchKit 1** and legacy Apple Watch targets.
+- Updated the **Info.plist** (fixed a malformed font registration, modern
+  permission strings, removed the deprecated `armv7` requirement).
+- Hardened font loading and other force-unwraps that could crash.
+- Full rebrand to **ShutterBridge** with a new app icon and launch screen.
+
+## Credits & licence
+
+Original app by Matt Kane, Ross Gibson and Valentin Kalchev, with contributions
+from Alex Taffe. Released under the MIT-style licence in [LICENSE](LICENSE),
+which this fork retains in full.

@@ -1,9 +1,9 @@
 //
 //  CableSelectorViewController.swift
-//  TriggertrapSLR
+//  ShutterBridge
 //
 //  Created by Ross Gibson on 18/08/2014.
-//  Copyright (c) 2014 Triggertrap Ltd. All rights reserved.
+//  Copyright (c) 2014 ShutterBridge. All rights reserved.
 //
 
 import UIKit
@@ -121,9 +121,9 @@ class CableSelectorViewController: SplitLayoutViewController {
     // MARK: - IBActions
     
     @IBAction func buyButtonTapped(_: AnyObject) {
-        
-        if (urlForCable != nil) {
-            UIApplication.shared.open(URL(string: urlForCable!)!, options: [:], completionHandler: nil)
+
+        if let urlString = urlForCable, let url = URL(string: urlString) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
     
@@ -180,10 +180,10 @@ extension CableSelectorViewController: UIPickerViewDelegate {
         let pickerLabel = UILabel()
         
         if pickerView.tag == 0 {
-            pickerLabel.font = UIFont.triggertrap_metric_regular(18.0)
+            pickerLabel.font = UIFont.shutterBridge_metric_regular(18.0)
             pickerLabel.text = cameraManufacturers[row] as String
         } else {
-            pickerLabel.font = UIFont.triggertrap_metric_light(18.0)
+            pickerLabel.font = UIFont.shutterBridge_metric_light(18.0)
             pickerLabel.text = cameraModelsForSelectedManufacturer[row] as String
         }
         

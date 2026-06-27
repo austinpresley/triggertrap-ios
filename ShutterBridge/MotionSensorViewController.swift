@@ -1,0 +1,102 @@
+//
+//  MotionSensorViewController.swift
+//  ShutterBridge
+//
+//  Created by Ross Gibson on 19/08/2014.
+//  Copyright (c) 2014 ShutterBridge. All rights reserved.
+//
+
+import UIKit
+
+class MotionSensorViewController: SensorViewController, MotionDelegate {
+    
+    // MARK: - Properties
+    
+    fileprivate var motionDetectionViewController: MotionDetectionViewController!
+    
+    // MARK: - Lifecycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        motionDetectionViewController = self.children.last as? MotionDetectionViewController
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        WearablesManager.sharedInstance.delegate = self
+    }
+    
+    override func willMove(toParent parent: UIViewController?) {
+        super.willMove(toParent: parent)
+        WearablesManager.sharedInstance.delegate = nil
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        motionDetectionViewController.viewWillDisappear(animated)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - Actions
+    
+    @IBAction func shutterButtonTouchUpInside(_ sender : UIButton) {
+        
+        if sequenceManager.activeViewController == nil {
+            if cameraPermissionAuthorized() {
+                startCameraSensorMode()
+            }
+            
+        } else {
+            sequenceManager.cancel() 
+        }
+    }
+    
+    override func startCameraSensorMode() {
+        if sufficientVolumeToTrigger() {
+            self.prepareForSequence()
+            waitingForSensorResetDelay = false
+            motionDetectionViewController.delegate = self
+            sequenceManager.activeViewController = self
+            startShutterButtonAnimation()
+        }
+    }
+    
+    // MARK: - Motion Delegate
+    
+    func motionDetected(_ detected: Bool) {
+        if detected {
+            // Start the sequence with the stored pulse length from the settings manager
+            triggerNow()
+        }
+    }
+     
+    // MARK: - Activity Manager Delegates 
+    
+    override func didCancelSequence() {
+        super.didCancelSequence()
+        motionDetectionViewController.delegate = nil
+    }
+    
+    // MARK: - Theme
+    
+    override func performThemeUpdate() {
+        super.performThemeUpdate()
+        
+        motionDetectionViewController.rotationButton?.setImage(ImageWithColor(UIImage(named: "Camera-Rotate")!, color: UIColor.shutterBridge_fillColor()), for: UIControl.State())
+        motionDetectionViewController.slider?.thumbTintColor = UIColor.shutterBridge_fillColor()
+        motionDetectionViewController.slider?.maximumTrackTintColor = UIColor.shutterBridge_naturalColor()
+        motionDetectionViewController.slider?.minimumTrackTintColor = UIColor.shutterBridge_primaryColor()
+    }
+}
+
+extension MotionSensorViewController: WearableManagerDelegate {
+    func watchDidTrigger() {
+        self.shutterButtonTouchUpInside(UIButton())
+    }
+}

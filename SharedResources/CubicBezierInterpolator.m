@@ -1,6 +1,6 @@
 //
 //  CubicBezierInterpolator.m
-//  Triggertrap
+//  ShutterBridge
 //
 //  Created by Ross Gibson on 01/04/2014.
 //

@@ -7,8 +7,8 @@
 /* Class = "UILabel"; text = "Usually found on the lens"; ObjectID = "3hW-gA-ewV"; */
 "3hW-gA-ewV.text"="Usually found on the lens";
 
-/* Class = "UILabel"; text = "I already own a Triggertrap Mobile Kit"; ObjectID = "7cj-Xg-fjg"; */
-"7cj-Xg-fjg.text"="I already own a Triggertrap Mobile Kit";
+/* Class = "UILabel"; text = "I already own a ShutterBridge Mobile Kit"; ObjectID = "7cj-Xg-fjg"; */
+"7cj-Xg-fjg.text"="I already own a ShutterBridge Mobile Kit";
 
 /* Class = "UILabel"; text = "Manual Focus"; ObjectID = "9m8-Oq-ofV"; */
 "9m8-Oq-ofV.text"="Manual Focus";
@@ -31,8 +31,8 @@
 /* Class = "UILabel"; text = "Plug into the headphone socket"; ObjectID = "OUT-Lt-TrE"; */
 "OUT-Lt-TrE.text"="Plug into the headphone socket";
 
-/* Class = "UILabel"; text = "Triggertrap"; ObjectID = "Tel-gq-TVZ"; */
-"Tel-gq-TVZ.text"="Triggertrap";
+/* Class = "UILabel"; text = "ShutterBridge"; ObjectID = "Tel-gq-TVZ"; */
+"Tel-gq-TVZ.text"="ShutterBridge";
 
 /* Class = "UIButton"; normalTitle = "Find on eBay"; ObjectID = "TwK-ix-ltr"; */
 "TwK-ix-ltr.normalTitle"="Find on eBay";
@@ -55,8 +55,8 @@
 /* Class = "UILabel"; text = "Connect your iOS device"; ObjectID = "YS6-0E-bfL"; */
 "YS6-0E-bfL.text"="Connect your iOS device";
 
-/* Class = "UIViewController"; title = "Triggertrap"; ObjectID = "YcA-4n-gQX"; */
-"YcA-4n-gQX.title"="Triggertrap";
+/* Class = "UIViewController"; title = "ShutterBridge"; ObjectID = "YcA-4n-gQX"; */
+"YcA-4n-gQX.title"="ShutterBridge";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Ys6-wd-Lxw"; */
 "Ys6-wd-Lxw.normalTitle"="Next";
@@ -100,6 +100,6 @@
 /* Class = "UILabel"; text = "Connect your camera"; ObjectID = "vWz-zk-Fk8"; */
 "vWz-zk-Fk8.text"="Connect your camera";
 
-/* Class = "UILabel"; text = "Triggertrap Mobile Kit"; ObjectID = "xSY-SH-sWo"; */
-"xSY-SH-sWo.text"="Triggertrap Mobile Kit";
+/* Class = "UILabel"; text = "ShutterBridge Mobile Kit"; ObjectID = "xSY-SH-sWo"; */
+"xSY-SH-sWo.text"="ShutterBridge Mobile Kit";
 
