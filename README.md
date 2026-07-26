@@ -16,6 +16,7 @@ Triggertrap is a commercial project that was conceived in 2010, launched in 2011
 - Run `pod install`
 - Open the .xcworkspace file
 
+
 # Credits
 
 The original software for iOS was built by [Matt Kane](https://github.com/ascorbic), and it was further developed by [Ross Gibson](https://github.com/Ross-Gibson) and [Valentin Kalchev](https://github.com/Valentin-Kalchev)
